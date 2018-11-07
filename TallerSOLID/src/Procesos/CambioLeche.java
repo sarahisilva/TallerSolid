@@ -13,6 +13,11 @@ import Leche.LecheDescremada;
  * @author Pedro Mendoza
  */
 public class CambioLeche {
+    /* Cambio de leche viola el principio Abierto Cerrado, puesto que 
+       si se añade una nueva leche habría que cambiar esta clase y así sucesivamente
+        Este principio afirma que las clases deben ser cerradas a modificación
+        pero abiertas a extensión
+    */
     
     public void cambiarTipoLecheDescremada(){
         LecheDescremada ldescrem= new LecheDescremada();
