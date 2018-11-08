@@ -11,4 +11,10 @@ package Postres.bien;
  */
 public class CalcularPrecio {
     
+    public static double calcularPrecioFinal(Postre nombre){
+        double precioFinal;
+        precioFinal=((nombre.getPrecioParcial())+(nombre.getPrecioParcial()*0.12))+(nombre.getAderezos().size()*0.50);
+        return precioFinal;
+    }
+    
 }
